@@ -23,6 +23,6 @@ def process_infile(infile, set_of_strings):
 if __name__ == "__main__":
 	strings = sys.argv[1]
 	infile = sys.argv[2]
-	print set_of_strings
 	set_of_strings = read_strings_to_set(infile)
+	print set_of_strings
 	process_infile(infile, set_of_strings)
