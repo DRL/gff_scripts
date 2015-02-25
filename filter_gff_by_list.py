@@ -15,7 +15,6 @@ def process_infile(infile, set_of_strings):
 		for line in fh:
 			if not line.startswith('#'):
 				temp = line.split("\t")
-				print temp[0]
 				if temp[0] in set_of_strings:
 					print line
 				else:
@@ -24,6 +23,6 @@ def process_infile(infile, set_of_strings):
 if __name__ == "__main__":
 	strings = sys.argv[1]
 	infile = sys.argv[2]
-
+	print set_of_strings
 	set_of_strings = read_strings_to_set(infile)
 	process_infile(infile, set_of_strings)
