@@ -16,7 +16,8 @@ def process_infile(infile, set_of_strings):
 			if not line.startswith('#'):
 				temp = line.split("\t")
 				if temp[0] in set_of_strings:
-					print line
+					#print line
+					pass
 				else:
 					pass 
 
