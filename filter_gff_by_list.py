@@ -16,8 +16,7 @@ def process_infile(infile, set_of_strings):
 			if not line.startswith('#'):
 				temp = line.split("\t")
 				if temp[0] in set_of_strings:
-					#print line
-					pass
+					print line
 				else:
 					pass 
 
@@ -25,5 +24,4 @@ if __name__ == "__main__":
 	strings = sys.argv[1]
 	infile = sys.argv[2]
 	set_of_strings = read_strings_to_set(infile)
-	print set_of_strings
 	process_infile(infile, set_of_strings)
