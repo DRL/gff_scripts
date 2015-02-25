@@ -26,4 +26,5 @@ if __name__ == "__main__":
 	infile = sys.argv[2]
 
 	set_of_strings = read_strings_to_set(infile)
+	print set_of_strings
 	process_infile(infile, set_of_strings)
