@@ -15,7 +15,6 @@ def process_infile(infile, set_of_strings):
 		for line in fh:
 			if not line.startswith('#'):
 				temp = line.split("\t")
-				print temp 
 				if len(temp) == 9:
 					if temp[0] in set_of_strings:
 						print line
